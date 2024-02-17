@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@200;400;600;700&display=swap");
+
+/* global */
+.container {
+  position: relative;
+  max-width: 80%;
+  margin: auto;
+  padding: 0 19px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 2rem;
+}
+
+.rowItem {
+  outline: 2px solid rgba(0, 0, 0, 0.105);
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  width: 35%;
+  height: 360px;
+  border-radius: 0.2cm;
+  position: relative;
+  overflow: hidden;
+  min-width: 300px;
+}
+
+.rowItem:hover {
+  outline: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+.trending {
+  height: 60vh;
+}
+.itemHeader {
+  width: 100%;
+  height: inherit;
+  position: relative;
+  border-radius: 0.2cm;
+}
+.itemHeader Image {
+  width: 100%;
+}
+
+.itemDescription {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.descText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1rem;
+  margin: 0 2rem 2rem;
+  overflow: hidden;
+}
+
+.trending h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem !important;
+}
+
+.rowContainer {
+  display: flex;
+  gap: 2.2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  position: relative;
+  padding: 1rem 0.6rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.rowContainer::-webkit-scrollbar {
+  display: none;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.titleBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns button {
+  color: #373737;
+  background-color:white ;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  outline: 2px solid rgba(0, 0, 0, 0.105)
+}
+.slideLeft{
+  position:absolute;
+  top: 55%;
+  left: 0%;
+  z-index: 1;
+  border-radius: .5cm;
+}
+.slideRight {
+  position: absolute;
+  top: 55%;
+  right: 0%;
+  z-index: 1;
+  border-radius: .5cm;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+ 
+  gap: 0.4rem;
+}
+
+.btns button:hover {
+  background-color: black;
+  color: aliceblue;
+}
+/* .item-price {
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-top: 1.4rem;
+} */
+.link {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: center;
+}

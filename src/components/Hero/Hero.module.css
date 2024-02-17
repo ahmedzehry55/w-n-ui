@@ -1,0 +1,6 @@
+.container {
+  background: url(../../../public/images/trav.jpg);
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+}

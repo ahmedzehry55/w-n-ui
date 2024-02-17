@@ -227,3 +227,7 @@
     transform: rotate(0deg);
   }
 }
+
+.sectionPadding {
+  padding: 4rem 6rem;
+}
